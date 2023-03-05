@@ -1,5 +1,5 @@
+[  0%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
 [  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/libMeshb/sources/libmeshb7.c.o
-[  1%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/rply/rply.c.o
 [  2%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/adler32.c.o
 [  3%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/compress.c.o
 [  3%] Building C object src/lib/geogram/third_party/CMakeFiles/geogram_third_party.dir/zlib/crc32.c.o
@@ -133,27 +133,27 @@
 [ 71%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/bibliography/embedded_references.cpp.o
 [ 71%] Linking CXX shared library ../../../lib/libgeogram.so
 [ 71%] Built target geogram
-[ 72%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
-[ 73%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
+[ 72%] Building CXX object src/bin/vorpacomp/CMakeFiles/vorpacomp.dir/main.cpp.o
+[ 73%] Building CXX object src/bin/vorpastat/CMakeFiles/vorpastat.dir/main.cpp.o
+[ 73%] Linking CXX executable ../../../bin/vorpacomp
+[ 73%] Built target vorpacomp
+[ 73%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 74%] Linking CXX executable ../../../bin/vorpastat
-[ 74%] Linking CXX executable ../../../bin/vorpacomp
 [ 74%] Built target vorpastat
-[ 74%] Built target vorpacomp
-[ 74%] Building CXX object src/bin/geodump/CMakeFiles/geodump.dir/main.cpp.o
 [ 75%] Building CXX object src/bin/vorpalite/CMakeFiles/vorpalite.dir/main.cpp.o
 [ 76%] Linking CXX executable ../../../bin/geodump
 [ 76%] Built target geodump
 [ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/main.cpp.o
 [ 77%] Linking CXX executable ../../../bin/vorpalite
+[ 77%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 77%] Built target vorpalite
 [ 78%] Building CXX object src/tests/test_convex_cell/CMakeFiles/test_convex_cell.dir/main.cpp.o
-[ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/nn_search_ANN.cpp.o
 [ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/ANN.cpp.o
 [ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_fix_rad_search.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_pr_search.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
-[ 80%] Linking CXX executable ../../../bin/test_convex_cell
 [ 81%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
+[ 81%] Linking CXX executable ../../../bin/test_convex_cell
 [ 81%] Built target test_convex_cell
 [ 81%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
@@ -189,11 +189,11 @@
 [ 93%] Linking CXX executable ../../../../bin/compute_delaunay
 [ 93%] Built target compute_delaunay
 [ 93%] Building CXX object src/examples/geogram/opennl_LSCM/CMakeFiles/opennl_LSCM.dir/main.cpp.o
-[ 94%] Linking CXX executable ../../../../bin/compute_RVD
+[ 95%] Linking CXX executable ../../../../bin/compute_RVD
 [ 95%] Linking CXX executable ../../../../bin/opennl_LSCM
 [ 95%] Built target compute_RVD
-[ 95%] Built target opennl_LSCM
 [ 95%] Building CXX object src/examples/geogram/opennl_mesh_smooth/CMakeFiles/opennl_mesh_smooth.dir/main.cpp.o
+[ 95%] Built target opennl_LSCM
 [ 95%] Building CXX object src/examples/geogram/manifold_harmonics/CMakeFiles/manifold_harmonics.dir/main.cpp.o
 [ 96%] Linking CXX executable ../../../../bin/manifold_harmonics
 [ 96%] Built target manifold_harmonics
