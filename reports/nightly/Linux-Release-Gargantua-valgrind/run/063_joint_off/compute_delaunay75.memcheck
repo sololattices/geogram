@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Release/bin/compute_delaunay /home/runner/work/geogram/geogram/tests/data/Small/joint.off algo:delaunay=BDEL</line>
 </preamble>
 
-<pid>10177</pid>
-<ppid>6590</ppid>
+<pid>10007</pid>
+<ppid>6610</ppid>
 <tool>memcheck</tool>
 
 <args>
