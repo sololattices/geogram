@@ -1,4 +1,5 @@
-MSBuild version 17.4.1+9a89d02ff for .NET Framework
+MSBuild version 17.5.1+f6fdcf537 for .NET Framework
+
   Checking Build System
   Building Custom Rule D:/a/geogram/geogram/src/lib/geogram/third_party/CMakeLists.txt
   libmeshb7.c
@@ -49,6 +50,7 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   quaternion.cpp
   stopwatch.cpp
   string.cpp
+  exact_geometry.cpp
   expansion_nt.cpp
   lbfgs_optimizers.cpp
   matrix_util.cpp
@@ -66,7 +68,6 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   mesh_frame_field.cpp
   mesh_geometry.cpp
   mesh_halfedges.cpp
-  mesh_intersection.cpp
   mesh_io.cpp
   mesh_local_operations.cpp
   mesh_manifold_harmonics.cpp
@@ -77,9 +78,12 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   mesh_repair.cpp
   mesh_smoothing.cpp
   mesh_subdivision.cpp
+  mesh_surface_intersection.cpp
+  mesh_surface_intersection_internal.cpp
   mesh_tetrahedralize.cpp
   mesh_topology.cpp
   triangle_intersection.cpp
+  CDT_2d.cpp
   LFS.cpp
   delaunay.cpp
   delaunay_2d.cpp
@@ -166,6 +170,9 @@ MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Building Custom Rule D:/a/geogram/geogram/src/examples/geogram/simple_raytrace/CMakeLists.txt
   main.cpp
   simple_raytrace.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\simple_raytrace.exe
+  Building Custom Rule D:/a/geogram/geogram/src/tests/test_CDT_2d/CMakeLists.txt
+  main.cpp
+  test_CDT_2d.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\test_CDT_2d.exe
   Building Custom Rule D:/a/geogram/geogram/src/tests/test_HLBFGS/CMakeLists.txt
   main.cpp
   test_HLBFGS.vcxproj -> D:\a\geogram\geogram\build\Windows\bin\Release\test_HLBFGS.exe
