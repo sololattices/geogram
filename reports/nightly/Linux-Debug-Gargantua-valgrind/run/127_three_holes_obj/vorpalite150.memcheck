@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/vorpalite pts=5000 /home/runner/work/geogram/geogram/tests/data/Small/three_holes.obj out.meshb</line>
 </preamble>
 
-<pid>14506</pid>
-<ppid>6630</ppid>
+<pid>14485</pid>
+<ppid>6648</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -43,7 +43,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:09:41.748 </time>
+  <time>00:00:09:40.254 </time>
 </status>
 
 <errorcounts>
