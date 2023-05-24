@@ -36,13 +36,13 @@ endif()
 # Set GEOGRAM_SUB_BUILD if Geogram sources included in buildtree, then
 # VORPALINE_PLATFORM can be set directly in parent CMakeLists.txt
 if(NOT GEOGRAM_SUB_BUILD)
-   option(GEOGRAM_WITH_GRAPHICS "Viewers and geogram_gfx library" ON)
+   option(GEOGRAM_WITH_GRAPHICS "Viewers and geogram_gfx library" OFF)
    option(GEOGRAM_WITH_LEGACY_NUMERICS "Legacy numerical libraries" ON)
-   option(GEOGRAM_WITH_HLBFGS "Non-linear solver (Yang Liu's HLBFGS)" ON)
+   option(GEOGRAM_WITH_HLBFGS "Non-linear solver (Yang Liu's HLBFGS)" OFF)
    option(GEOGRAM_WITH_TETGEN "Tetrahedral mesher (Hang Si's TetGen)" ON)
    option(GEOGRAM_WITH_TRIANGLE "Triangle mesher (Jonathan Shewchuk's triangle)" ON)
    option(GEOGRAM_WITH_LUA "Built-in LUA interpreter" ON)
-   option(GEOGRAM_LIB_ONLY "Libraries only (no example programs/no viewer)" OFF)
+   option(GEOGRAM_LIB_ONLY "Libraries only (no example programs/no viewer)" ON)
    option(GEOGRAM_WITH_FPG "Predicate generator (Sylvain Pion's FPG)" OFF)
    option(GEOGRAM_USE_SYSTEM_GLFW3 "Use the version of GLFW3 installed in the system if found" OFF)
    option(GEOGRAM_WITH_GARGANTUA "64-bit indices" OFF)
@@ -110,7 +110,7 @@ configure_file(
     "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
     IMMEDIATE @ONLY)
 
-add_custom_target(uninstall
+add_custom_target(geogram_uninstall
     COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
 
 ##############################################################################
