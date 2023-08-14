@@ -12,7 +12,7 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/test_CDT_2d /home/runner/work/geogram/geogram/tests/data/CDT2d/constraints_100K.obj</line>
 </preamble>
 
-<pid>7343</pid>
+<pid>7346</pid>
 <ppid>7188</ppid>
 <tool>memcheck</tool>
 
@@ -41,7 +41,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:08:44.737 </time>
+  <time>00:00:08:48.590 </time>
 </status>
 
 <errorcounts>
@@ -53,7 +53,7 @@
     <name>Vorpaline_gomp_64bits_leak_2</name>
   </pair>
   <pair>
-    <count>147</count>
+    <count>146</count>
     <name>ZLIB uninitialized memory read</name>
   </pair>
 </suppcounts>
