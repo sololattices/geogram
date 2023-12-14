@@ -82,7 +82,7 @@
 [ 42%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/LFS.cpp.o
 [ 42%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay.cpp.o
 [ 43%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_2d.cpp.o
-[ 44%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_3d.cpp.o
+[ 43%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_3d.cpp.o
 [ 44%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_nn.cpp.o
 [ 44%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_tetgen.cpp.o
 [ 45%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/delaunay_triangle.cpp.o
@@ -160,8 +160,8 @@
 [ 79%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
 [ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
+[ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 81%] Linking CXX executable ../../../bin/bench_load
-[ 81%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 81%] Built target bench_load
 [ 81%] Building CXX object src/tests/test_locks/CMakeFiles/test_locks.dir/main.cpp.o
 [ 82%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_fix_rad_search.cpp.o
