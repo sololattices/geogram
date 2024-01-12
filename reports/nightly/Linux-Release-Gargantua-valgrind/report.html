@@ -5,16 +5,60 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 6.1.1 (Python 3.11.7 on linux)" name="Generator">
+<meta content="Robot Framework 7.0 (Python 3.11.7 on linux)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all" type="text/css">
+<style media="all">
+:root {
+    --text-color: black;
+    --background-color: white;
+    --primary-color: #ddd;
+    --secondary-color: #ccc;
+    --link-color: #15c;
+    --link-hover-color: #61c;
+    --highlight-color: #eee;
+    --target-color: #f9f9f9;
+    --pass-color: #97bd61;
+    --fail-color: #ce3e01;
+    --warn-color: #fed84f;
+    --pass-link-color: #098a09;
+    --warn-link-color: #927201;
+    --fail-link-color: #ce3e01;
+    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+[data-theme="dark"] {
+    --text-color: #e2e1d7;
+    --background-color: #1c2227;
+    --primary-color: #26373b;
+    --secondary-color: #424f5a;
+    --link-color: #8cc4ff;
+    --link-hover-color: #bb86fc;
+    --highlight-color: #002b36;
+    --target-color: #1a252e;
+    --pass-link-color: #97bd61;
+    --warn-link-color: #fed84f;
+    --fail-link-color: #ff9b8f;
+    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
+    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
+}
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black;
+    color: black; /* Fallback value */
+    color: var(--text-color);
     padding: 6px;
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
+    margin-left: 15px;
+}
+body[theme-toggled] {
+    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 table {
     table-layout: fixed;
@@ -29,20 +73,37 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c;
+    color: #15c; /* Fallback value */
+    color: var(--link-color);
 }
 a > img {
-    border: 1px solid #15c !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #15c !important; /* Fallback value */
+    border-color: var(--link-color) !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c;
+    color: #61c; /* Fallback value */
+    color: var(--link-hover-color);
+}
+select {
+    background-color: white; /* Fallback value */
+    background-color: var(--background-color);
+    color: black; /* Fallback value */
+    color: var(--text-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-radius: 4px;
 }
 .parent-name {
     font-size: 0.7em;
@@ -55,7 +116,7 @@ a:hover, a:active {
 #header {
     width: 65em;
     height: 3em;
-    margin: 6px 0;
+    margin: 20px 0 6px 0;
 }
 h1 {
     float: left;
@@ -83,14 +144,17 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important;
+    color: #ce3e01 !important; /* Fallback value */
+    color: var(--fail-link-color) !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important;
+    color: #098a09 !important; /* Fallback value */
+    color: var(--pass-link-color) !important;
 }
 .skip {
-    color: #927201 !important;
+    color: #927201 !important; /* Fallback value */
+    color: var(--warn-link-color) !important;
     font-weight: bold;
 }
 .label {
@@ -98,8 +162,10 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black;
-    background-color: #ddd;
+    color: black; /* Fallback value */
+    color: var(--text-color);
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -109,15 +175,18 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61;
+    background-color: #97bd61; /* Fallback value */
+    background-color: var(--pass-color);
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01;
+    background-color: #ce3e01; /* Fallback value */
+    background-color: var(--fail-color);
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f;
+    background-color: #fed84f; /* Fallback value */
+    background-color: var(--warn-color);
     color: #000 !important;
 }
 /* Top right header */
@@ -146,7 +215,8 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd;
+    background: #ddd; /* Fallback value */
+    background: var(--primary-color);
 }
 /* Statistics table */
 .statistics {
@@ -156,15 +226,20 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -200,27 +275,33 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
     width: auto;
     height: 7px;
     padding: 0;
-    background: #aaa;
 }
 .empty-graph {
-    background: #eee;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01;
+    background: #ce3e01; /* Fallback value */
+    background: var(--fail-color);
 }
 .pass-bar {
-    background: #97bd61;
+    background: #97bd61; /* Fallback value */
+    background: var(--pass-color);
 }
 .skip-bar {
-    background: #fed84f;
+    background: #fed84f; /* Fallback value */
+    background: var(--warn-color);
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -230,47 +311,103 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--secondary-color);
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    background-color: #ccc !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
+    background-image: var(--ascending-icon);
+    background-color: #ccc !important; /* Fallback value */
+    background-color: var(--secondary-color) !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-    background-color: #ccc !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
+    background-image: var(--descending-icon);
+    background-color: #ccc !important; /* Fallback value */
+    background-color: var(--secondary-color) !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
+}
+#theme-toggle {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    border: none;
+    padding: 4px;
+    z-index: 1000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: var(--highlight-color);
+}
+[data-theme="dark"] .dark-mode-icon,
+[data-theme="light"] .light-mode-icon {
+    display: none;
+}
+[data-theme="dark"] .light-mode-icon,
+[data-theme="light"] .dark-mode-icon {
+    display: block;
+}
+@keyframes highlight {
+    0% {
+        background: var(--primary-color)
+    }
+    100% {
+        background: var(--target-color);
+    }
+}
+:target {
+    background: var(--target-color);
+    transition: background 0.3s;
+    animation: highlight 4s;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
+:root {
+    --col-toggle-color: #6c6c6c; /* same as in sort icon */
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --col-toggle-color: #adadad;
+    }
+}
 /* Generic table styles */
 table {
     margin: 0 1px;
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
 }
 tr {
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
 }
 th {
-    background: #ddd;
-    color: black;
+    background: #ddd; /* Fallback value */
+    background: var(--primary-color);
+    color: black; /* Fallback value */
+    color: var(--text-color);
 }
 /* Summary and total/tag/suite details */
 .details {
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
     border-spacing: 0.2em;
     clear: both;
     width: 65em;
     margin-bottom: 1em;
 }
 .details th {
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
     width: 11em;
     text-align: left;
     vertical-align: top;
@@ -297,8 +434,30 @@ th {
     display: none;
 }
 /* Search */
+input[type='submit'], input[type='button'] {
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border: 0;
+    padding: 4px 6px 4px 6px;
+    color: black; /* Fallback value */
+    color: var(--text-color);
+}
+input[type='submit']:hover, input[type='button']:hover {
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--secondary-color);
+}
 #search-suite, #search-test, #search-include, #search-exclude {
     width: 25em;
+    background-color: white; /* Fallback value */
+    background-color: var(--background-color);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+    color: black; /* Fallback value */
+    color: var(--text-color);
 }
 #search a:hover {
     text-decoration: none;
@@ -306,8 +465,12 @@ th {
 #search-help div {
     margin: 0.5em 0.5em 0.7em 0;
     padding: 0.7em;
-    background: #eee;
-    border: 1px solid #ccc;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 3px;
 }
 #search-help h3, #search-help p {
@@ -342,18 +505,24 @@ th {
 }
 .detail-tab {
     float: left;
-    background: #ddd;
-    border: 1px solid #ccc;
+    background: #ddd; /* Fallback value */
+    background: var(--primary-color);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
     border-bottom-width: 0;
     margin: 0 0.5em 0 0;
     padding-top: 0.1em;
     border-radius: 3px 3px 0 0;
 }
 .detail-tab:hover {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
 }
 .detail-tab a {
-    color: black;
+    color: black; /* Fallback value */
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     padding: 0 1em;
@@ -361,19 +530,23 @@ th {
 .detail-tab-selected {
     position: relative;
     top: 1px;
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
 }
 .detail-tab-selected:hover {
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
 }
 /* Test details table */
 #test-details {
     width: 100%;
     border-spacing: 1px;
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--secondary-color);
 }
 #test-details > tbody > tr:hover {
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
     cursor: pointer;
 }
 #test-details th, #test-details td {
@@ -388,11 +561,13 @@ th {
 }
 .details-col-toggle {
     float: left;
-    color: #6c6c6c; /* same as in sort icon */
+    color: #6c6c6c; /* Fallback value */
+    color: var(--col-toggle-color);
     cursor: pointer;
 }
 .details-col-toggle:hover {
-    color: black;
+    color: black; /* Fallback value */
+    color: var(--text-color);
 }
 .details-col-name {
     min-width: 20em;
@@ -433,10 +608,18 @@ th {
     background-image: none;
 }
 th.hidden:hover {
-    background-color: #ccc;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
+}
+#status-bar {
+    height: 100%;
+    width: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 </style>
-<style media="print" type="text/css">
+<style media="print">
 body {
     background: white !important;
     padding: 0;
@@ -476,7 +659,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -499,7 +682,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -511,14 +694,12 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
-    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
-    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -528,24 +709,32 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
+    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .doc code {
+    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img {
-    border: 1px solid #ccc;
+.doc img, .doc table, .doc table th, .doc table td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
 }
 .doc hr {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
     height: 1px;
     border: 0;
 }
@@ -642,7 +831,6 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
-        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -733,6 +921,7 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
+            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -753,7 +942,6 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
-        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -764,13 +952,12 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
-        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =' : '');
+        kw.assign = data.assign + (data.assign ? ' =  ' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1149,8 +1336,9 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
-                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
+                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
+                         'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1193,6 +1381,7 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
+        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1208,7 +1397,12 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(element[8], strings),
+            status: parseStatus(status),
+            message: function () {
+                var msg = status.length == 4 ? strings.get(status[3]) : '';
+                this.message = function () { return msg; };
+                return msg;
+            },
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1419,6 +1613,20 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
+const lightModeIcon = `
+<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+    viewBox="0 0 24 24" fill="var(--text-color)">
+    <rect fill="none" height="24" width="24" />
+    <path
+        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
+</svg>`
+const darkModeIcon = `
+<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+    viewBox="0 0 24 24" fill="var(--text-color)">
+    <rect fill="none" height="24" width="24" />
+    <path
+        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
+</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1454,6 +1662,10 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
+           '<button id=theme-toggle>' +
+             lightModeIcon +
+             darkModeIcon +
+           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1465,6 +1677,7 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
+    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1593,13 +1806,65 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
+const theme = function () {
+    const storageKey = 'theme-preference';
+    const urlParams = new URLSearchParams(window.location.search);
+    var storage;
+    var theme;
+    function init(givenStorage) {
+        storage = givenStorage;
+        theme = { value: getPreference() };
+        document.body.setAttribute('data-theme', theme.value);
+        reflectPreference();
+        window.matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', ({matches:isDark}) => {
+                theme.value = isDark ? 'dark' : 'light';
+                setPreference();
+            });
+        window.addEventListener('storage', ({key, newValue}) => {
+            if (key === storage.fullKey(storageKey)) {
+                theme.value = newValue === 'dark' ? 'dark' : 'light';
+                setPreference();
+            }
+        });
+    }
+    function getPreference() {
+        if (urlParams.has('theme')) {
+            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
+            storage.set(storageKey, urlTheme);
+            urlParams.delete('theme');
+            return urlTheme;
+        }
+        if (storage.get(storageKey))
+            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function setPreference() {
+        storage.set(storageKey, theme.value);
+        reflectPreference();
+    }
+    function reflectPreference() {
+        document.body.setAttribute('data-theme', theme.value);
+        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
+        const event = new Event('theme-change', {value: theme.value});
+        document.dispatchEvent(event);
+    }
+    function onClick() {
+        theme.value = theme.value === 'light' ? 'dark' : 'light';
+        document.body.setAttribute('theme-toggled', "");
+        setPreference();
+    }
+    return {init: init, getPreference: getPreference, setPreference: setPreference,
+        reflectPreference: reflectPreference, onClick: onClick};
+}();
 </script>
 <script type="text/javascript">
 storage = function () {
     var prefix = 'robot-framework-';
     var storage;
     function init(user) {
-        prefix += user + '-';
+        if (user)
+            prefix += user + '-';
         storage = getStorage();
     }
     function getStorage() {
@@ -1613,23 +1878,26 @@ storage = function () {
             return {};
         }
     }
-    function get(name, defaultValue) {
-        var value = storage[prefix + name];
+    function get(key, defaultValue) {
+        var value = storage[fullKey(key)];
         if (typeof value === 'undefined')
             return defaultValue;
         return value;
     }
-    function set(name, value) {
-        storage[prefix + name] = value;
+    function set(key, value) {
+        storage[fullKey(key)] = value;
     }
-    return {init: init, get: get, set: set};
+    function fullKey(key) {
+        return prefix + key;
+    }
+    return {init: init, get: get, set: set, fullKey: fullKey};
 }();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,959293],[[4,5,6,0,[],[1,13,19626],[],[[7,0,0,[8,9,10,11],[1,25,859],[]],[12,0,0,[8,9,10,11],[1,884,840],[]],[13,0,0,[8,9,10,11],[1,1724,835],[]],[14,0,0,[8,9,10,11],[1,2559,837],[]],[15,0,0,[8,9,10,11],[1,3396,1854],[]],[16,0,0,[8,9,10,11],[1,5250,834],[]],[17,0,0,[8,9,10,11],[1,6084,851],[]],[18,0,0,[8,9,10,11],[1,6935,851],[]],[19,0,0,[8,9,10,11],[1,7786,1318],[]],[20,0,0,[8,9,10,11],[1,9105,1406],[]],[21,0,0,[8,9,10,11],[1,10511,1627],[]],[22,0,0,[8,9,10,11],[1,12139,845],[]],[23,0,0,[8,9,10,11],[1,12984,1485],[]],[24,0,0,[8,9,10,11],[1,14470,1320],[]],[25,0,0,[8,9,10,11],[1,15790,856],[]],[26,0,0,[8,9,10,11],[1,16646,1470],[]],[27,0,0,[8,9,10,11],[1,18116,777],[]],[28,0,0,[8,9,10,11],[1,18893,745],[]]],[],[18,18,0,0]],[29,30,31,0,[],[1,19640,22690],[],[[32,0,0,[8,9,11],[1,19641,933],[]],[33,0,0,[8,9,11],[1,20574,943],[]],[34,0,0,[8,9,11],[1,21517,940],[]],[35,0,0,[8,9,11],[1,22457,942],[]],[36,0,0,[8,9,11],[1,23399,939],[]],[37,0,0,[8,9,11],[1,24338,949],[]],[38,0,0,[8,9,11],[1,25287,952],[]],[39,0,0,[8,9,11],[1,26240,951],[]],[40,0,0,[8,9,11],[1,27192,936],[]],[41,0,0,[8,9,11],[1,28128,934],[]],[42,0,0,[8,9,11],[1,29062,959],[]],[43,0,0,[8,9,11],[1,30021,7831],[]],[44,0,0,[8,9,11],[1,37853,936],[]],[45,0,0,[8,9,11],[1,38789,938],[]],[46,0,0,[8,9,11],[1,39727,949],[]],[47,0,0,[8,9,11],[1,40676,1653],[]]],[],[16,16,0,0]],[48,49,50,0,[],[1,42331,21351],[],[[32,0,0,[8,9,11],[1,42333,922],[]],[33,0,0,[8,9,11],[1,43255,934],[]],[34,0,0,[8,9,11],[1,44190,930],[]],[35,0,0,[8,9,11],[1,45120,932],[]],[36,0,0,[8,9,11],[1,46052,934],[]],[37,0,0,[8,9,11],[1,46986,935],[]],[38,0,0,[8,9,11],[1,47921,942],[]],[39,0,0,[8,9,11],[1,48863,938],[]],[40,0,0,[8,9,11],[1,49801,926],[]],[41,0,0,[8,9,11],[1,50727,927],[]],[42,0,0,[8,9,11],[1,51654,936],[]],[43,0,0,[8,9,11],[1,52590,6837],[]],[44,0,0,[8,9,11],[1,59427,931],[]],[45,0,0,[8,9,11],[1,60358,927],[]],[46,0,0,[8,9,11],[1,61285,938],[]],[47,0,0,[8,9,11],[1,62223,1459],[]]],[],[16,16,0,0]],[51,52,53,0,[],[1,63683,5496],[],[[54,55,0,[8,9,56,11],[1,63685,774],[]],[57,55,0,[8,9,56,11],[1,64459,779],[]],[58,55,0,[8,9,56,11],[1,65239,774],[]],[59,55,0,[8,9,56,11],[1,66014,778],[]],[60,55,0,[8,9,56,11],[1,66792,779],[]],[61,55,0,[8,9,56,11],[1,67572,806],[]],[62,55,0,[8,9,56,11],[1,68378,801],[]]],[],[7,7,0,0]],[63,64,65,0,[],[1,69180,16358],[],[[7,0,0,[8,9,10,11],[1,69182,867],[]],[12,0,0,[8,9,10,11],[1,70050,836],[]],[13,0,0,[8,9,10,11],[1,70886,845],[]],[14,0,0,[8,9,10,11],[1,71731,838],[]],[15,0,0,[8,9,10,11],[1,72570,1377],[]],[16,0,0,[8,9,10,11],[1,73947,836],[]],[17,0,0,[8,9,10,11],[1,74783,847],[]],[18,0,0,[8,9,10,11],[1,75630,848],[]],[19,0,0,[8,9,10,11],[1,76478,863],[]],[20,0,0,[8,9,10,11],[1,77341,932],[]],[21,0,0,[8,9,10,11],[1,78273,1162],[]],[22,0,0,[8,9,10,11],[1,79435,843],[]],[23,0,0,[8,9,10,11],[1,80278,1032],[]],[24,0,0,[8,9,10,11],[1,81311,866],[]],[25,0,0,[8,9,10,11],[1,82178,856],[]],[26,0,0,[8,9,10,11],[1,83034,1001],[]],[27,0,0,[8,9,10,11],[1,84035,749],[]],[28,0,0,[8,9,10,11],[1,84784,753],[]]],[],[18,18,0,0]],[66,67,68,0,[],[1,85539,107431],[],[[69,70,0,[66,8,9,11],[1,85541,3288],[]],[71,70,0,[66,8,9,11],[1,88829,4116],[]],[72,70,0,[66,8,9,11],[1,92945,41498],[]],[73,70,0,[66,8,9,11],[1,134443,3288],[]],[74,70,0,[66,8,9,11],[1,137731,4169],[]],[75,70,0,[66,8,9,11],[1,141900,50310],[]],[76,70,0,[66,8,9,11],[1,192210,759],[]]],[],[7,7,0,0]],[77,78,79,0,[],[1,192971,195138],[],[[80,0,0,[8,9,81,11],[1,192974,62148],[]],[82,0,0,[8,9,81,11],[1,255122,54624],[]],[83,0,0,[8,9,81,11],[1,309746,43324],[]],[84,0,0,[8,9,81,11],[1,353070,35039],[]]],[],[4,4,0,0]],[85,86,87,0,[],[1,388110,10322],[],[[88,0,0,[8,9,85,11],[1,388112,1002],[]],[89,0,0,[8,9,85,11],[1,389114,2539],[]],[90,0,0,[8,9,85,11],[1,391653,1003],[]],[91,0,0,[8,9,85,11],[1,392656,2792],[]],[92,0,0,[8,9,85,11],[1,395448,922],[]],[93,0,0,[8,9,85,11],[1,396370,981],[]],[94,0,0,[8,9,85,11],[1,397351,1081],[]]],[],[7,7,0,0]],[95,96,97,0,[],[1,398433,1929],[],[[88,0,0,[8,9,85,11],[1,398435,906],[]],[89,0,0,[8,9,85,11],[1,399341,1021],[]]],[],[2,2,0,0]],[98,99,100,0,[],[1,400363,12242],[],[[101,0,0,[8,9,98,11],[1,400365,1753],[]],[102,0,0,[8,9,98,11],[1,402118,1731],[]],[103,0,0,[8,9,98,11],[1,403849,1731],[]],[104,0,0,[8,9,98,11],[1,405580,1749],[]],[105,0,0,[8,9,98,11],[1,407329,1714],[]],[106,0,0,[8,9,98,11],[1,409043,1803],[]],[107,0,0,[8,9,98,11],[1,410846,1759],[]]],[],[7,7,0,0]],[108,109,110,0,[],[1,412606,16000],[],[[111,0,0,[8,9,108,11],[1,412608,805],[]],[112,0,0,[8,9,108,11],[1,413413,818],[]],[113,0,0,[8,9,108,11],[1,414231,870],[]],[114,0,0,[8,9,108,11],[1,415101,855],[]],[115,0,0,[8,9,108,11],[1,415956,845],[]],[116,0,0,[8,9,108,11],[1,416801,858],[]],[117,0,0,[8,9,108,11],[1,417659,856],[]],[118,0,0,[8,9,108,11],[1,418516,835],[]],[119,0,0,[8,9,108,11],[1,419351,830],[]],[120,0,0,[8,9,108,11],[1,420181,863],[]],[121,0,0,[8,9,108,11],[1,421044,833],[]],[122,0,0,[8,9,108,11],[1,421878,839],[]],[123,0,0,[8,9,108,11],[1,422717,840],[]],[124,0,0,[8,9,108,11],[1,423557,829],[]],[125,0,0,[8,9,108,11],[1,424387,852],[]],[126,0,0,[8,9,108,11],[1,425239,853],[]],[127,0,0,[8,9,108,11],[1,426092,853],[]],[128,0,0,[8,9,108,11],[1,426945,828],[]],[129,0,0,[8,9,108,11],[1,427773,832],[]]],[],[19,19,0,0]],[130,131,132,0,[],[1,428607,5429],[],[[133,0,0,[8,9,134,11],[1,428608,5428],[]]],[],[1,1,0,0]],[135,136,137,0,[],[1,434036,46554],[],[[138,0,0,[8,9,81,11],[1,434038,19830],[]],[139,0,0,[8,9,81,11],[1,453868,26722],[]]],[],[2,2,0,0]],[81,140,141,0,[],[1,480590,339403],[],[[142,0,0,[8,9,81,11],[1,480592,3044],[]],[143,0,0,[8,9,81,11],[1,483636,45069],[]],[144,0,0,[8,9,81,11],[1,528705,60852],[]],[145,0,0,[8,9,81,11],[1,589557,48336],[]],[146,0,0,[8,9,81,11],[1,637893,66320],[]],[147,0,0,[8,9,81,11],[1,704213,45324],[]],[148,0,0,[8,9,81,11],[1,749537,53227],[]],[149,0,0,[8,9,81,11],[1,802764,17228],[]]],[],[8,8,0,0]],[134,150,151,0,[],[1,819993,99520],[],[[7,0,0,[8,9,134,11],[1,819995,1264],[]],[152,0,0,[8,9,134,11],[1,821259,1703],[]],[12,0,0,[8,9,134,11],[1,822962,1305],[]],[13,0,0,[8,9,134,11],[1,824268,1596],[]],[14,0,0,[8,9,134,11],[1,825864,1569],[]],[15,0,0,[8,9,134,11],[1,827433,10065],[]],[16,0,0,[8,9,134,11],[1,837499,1285],[]],[153,0,0,[8,9,134,11],[1,838784,1277],[]],[17,0,0,[8,9,134,11],[1,840061,1336],[]],[154,0,0,[8,9,134,11],[1,841397,1310],[]],[18,0,0,[8,9,134,11],[1,842707,1421],[]],[155,0,0,[8,9,134,11],[1,844129,1468],[]],[19,0,0,[8,9,134,11],[1,845598,2555],[]],[20,0,0,[8,9,134,11],[1,848153,6257],[]],[156,0,0,[8,9,134,11],[1,854410,7219],[]],[21,0,0,[8,9,134,11],[1,861630,13621],[]],[157,0,0,[8,9,134,11],[1,875252,17373],[]],[22,0,0,[8,9,134,11],[1,892625,1429],[]],[158,0,0,[8,9,134,11],[1,894054,2054],[]],[23,0,0,[8,9,134,11],[1,896108,6697],[]],[24,0,0,[8,9,134,11],[1,902806,4796],[]],[25,0,0,[8,9,134,11],[1,907602,1579],[]],[26,0,0,[8,9,134,11],[1,909181,7440],[]],[27,0,0,[8,9,134,11],[1,916621,754],[]],[159,0,0,[8,9,134,11],[1,917375,2138],[]]],[],[25,25,0,0]],[160,161,162,0,[],[1,919515,39775],[],[[143,0,0,[8,9,163,11],[1,919517,4997],[]],[89,0,0,[8,9,163,11],[1,924514,8910],[]],[146,0,0,[8,9,163,11],[1,933424,25866],[]]],[],[3,3,0,0]]],[],[],[160,160,0,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,957704],[[4,5,6,0,[],[1,16,19614],[],[[7,0,0,[8,9,10,11],[1,29,839],[]],[12,0,0,[8,9,10,11],[1,868,840],[]],[13,0,0,[8,9,10,11],[1,1708,835],[]],[14,0,0,[8,9,10,11],[1,2543,838],[]],[15,0,0,[8,9,10,11],[1,3382,1855],[]],[16,0,0,[8,9,10,11],[1,5236,833],[]],[17,0,0,[8,9,10,11],[1,6070,845],[]],[18,0,0,[8,9,10,11],[1,6915,846],[]],[19,0,0,[8,9,10,11],[1,7761,1346],[]],[20,0,0,[8,9,10,11],[1,9107,1384],[]],[21,0,0,[8,9,10,11],[1,10492,1642],[]],[22,0,0,[8,9,10,11],[1,12134,846],[]],[23,0,0,[8,9,10,11],[1,12980,1487],[]],[24,0,0,[8,9,10,11],[1,14468,1314],[]],[25,0,0,[8,9,10,11],[1,15781,856],[]],[26,0,0,[8,9,10,11],[1,16638,1464],[]],[27,0,0,[8,9,10,11],[1,18101,788],[]],[28,0,0,[8,9,10,11],[1,18890,740],[]]],[],[18,18,0,0]],[29,30,31,0,[],[1,19630,22524],[],[[32,0,0,[8,9,11],[1,19632,928],[]],[33,0,0,[8,9,11],[1,20560,937],[]],[34,0,0,[8,9,11],[1,21497,936],[]],[35,0,0,[8,9,11],[1,22433,939],[]],[36,0,0,[8,9,11],[1,23373,938],[]],[37,0,0,[8,9,11],[1,24311,946],[]],[38,0,0,[8,9,11],[1,25257,957],[]],[39,0,0,[8,9,11],[1,26214,948],[]],[40,0,0,[8,9,11],[1,27162,933],[]],[41,0,0,[8,9,11],[1,28096,932],[]],[42,0,0,[8,9,11],[1,29028,955],[]],[43,0,0,[8,9,11],[1,29983,7719],[]],[44,0,0,[8,9,11],[1,37703,934],[]],[45,0,0,[8,9,11],[1,38637,935],[]],[46,0,0,[8,9,11],[1,39572,942],[]],[47,0,0,[8,9,11],[1,40514,1640],[]]],[],[16,16,0,0]],[48,49,50,0,[],[1,42155,21153],[],[[32,0,0,[8,9,11],[1,42156,918],[]],[33,0,0,[8,9,11],[1,43075,932],[]],[34,0,0,[8,9,11],[1,44007,927],[]],[35,0,0,[8,9,11],[1,44934,936],[]],[36,0,0,[8,9,11],[1,45870,930],[]],[37,0,0,[8,9,11],[1,46801,934],[]],[38,0,0,[8,9,11],[1,47735,941],[]],[39,0,0,[8,9,11],[1,48676,952],[]],[40,0,0,[8,9,11],[1,49629,928],[]],[41,0,0,[8,9,11],[1,50557,926],[]],[42,0,0,[8,9,11],[1,51483,932],[]],[43,0,0,[8,9,11],[1,52415,6640],[]],[44,0,0,[8,9,11],[1,59056,924],[]],[45,0,0,[8,9,11],[1,59980,927],[]],[46,0,0,[8,9,11],[1,60907,935],[]],[47,0,0,[8,9,11],[1,61842,1465],[]]],[],[16,16,0,0]],[51,52,53,0,[],[1,63308,5496],[],[[54,55,0,[8,9,56,11],[1,63309,774],[]],[57,55,0,[8,9,56,11],[1,64083,772],[]],[58,55,0,[8,9,56,11],[1,64855,769],[]],[59,55,0,[8,9,56,11],[1,65624,772],[]],[60,55,0,[8,9,56,11],[1,66396,768],[]],[61,55,0,[8,9,56,11],[1,67164,797],[]],[62,55,0,[8,9,56,11],[1,67962,842],[]]],[],[7,7,0,0]],[63,64,65,0,[],[1,68804,16298],[],[[7,0,0,[8,9,10,11],[1,68806,827],[]],[12,0,0,[8,9,10,11],[1,69633,836],[]],[13,0,0,[8,9,10,11],[1,70469,833],[]],[14,0,0,[8,9,10,11],[1,71302,839],[]],[15,0,0,[8,9,10,11],[1,72142,1394],[]],[16,0,0,[8,9,10,11],[1,73536,832],[]],[17,0,0,[8,9,10,11],[1,74368,837],[]],[18,0,0,[8,9,10,11],[1,75205,845],[]],[19,0,0,[8,9,10,11],[1,76050,868],[]],[20,0,0,[8,9,10,11],[1,76918,922],[]],[21,0,0,[8,9,10,11],[1,77840,1170],[]],[22,0,0,[8,9,10,11],[1,79011,850],[]],[23,0,0,[8,9,10,11],[1,79861,1030],[]],[24,0,0,[8,9,10,11],[1,80891,872],[]],[25,0,0,[8,9,10,11],[1,81764,854],[]],[26,0,0,[8,9,10,11],[1,82618,993],[]],[27,0,0,[8,9,10,11],[1,83611,749],[]],[28,0,0,[8,9,10,11],[1,84360,742],[]]],[],[18,18,0,0]],[66,67,68,0,[],[1,85103,107630],[],[[69,70,0,[66,8,9,11],[1,85105,3289],[]],[71,70,0,[66,8,9,11],[1,88394,4101],[]],[72,70,0,[66,8,9,11],[1,92495,41522],[]],[73,70,0,[66,8,9,11],[1,134018,3285],[]],[74,70,0,[66,8,9,11],[1,137303,4148],[]],[75,70,0,[66,8,9,11],[1,141451,50530],[]],[76,70,0,[66,8,9,11],[1,191981,752],[]]],[],[7,7,0,0]],[77,78,79,0,[],[1,192734,194784],[],[[80,0,0,[8,9,81,11],[1,192735,62043],[]],[82,0,0,[8,9,81,11],[1,254779,54529],[]],[83,0,0,[8,9,81,11],[1,309308,43332],[]],[84,0,0,[8,9,81,11],[1,352640,34877],[]]],[],[4,4,0,0]],[85,86,87,0,[],[1,387518,9985],[],[[88,0,0,[8,9,85,11],[1,387520,998],[]],[89,0,0,[8,9,85,11],[1,388519,2527],[]],[90,0,0,[8,9,85,11],[1,391046,995],[]],[91,0,0,[8,9,85,11],[1,392041,2520],[]],[92,0,0,[8,9,85,11],[1,394562,921],[]],[93,0,0,[8,9,85,11],[1,395483,951],[]],[94,0,0,[8,9,85,11],[1,396434,1070],[]]],[],[7,7,0,0]],[95,96,97,0,[],[1,397504,1915],[],[[88,0,0,[8,9,85,11],[1,397506,899],[]],[89,0,0,[8,9,85,11],[1,398405,1014],[]]],[],[2,2,0,0]],[98,99,100,0,[],[1,399419,12185],[],[[101,0,0,[8,9,98,11],[1,399421,1752],[]],[102,0,0,[8,9,98,11],[1,401173,1713],[]],[103,0,0,[8,9,98,11],[1,402886,1709],[]],[104,0,0,[8,9,98,11],[1,404595,1750],[]],[105,0,0,[8,9,98,11],[1,406346,1696],[]],[106,0,0,[8,9,98,11],[1,408042,1800],[]],[107,0,0,[8,9,98,11],[1,409843,1762],[]]],[],[7,7,0,0]],[108,109,110,0,[],[1,411605,15973],[],[[111,0,0,[8,9,108,11],[1,411607,802],[]],[112,0,0,[8,9,108,11],[1,412409,806],[]],[113,0,0,[8,9,108,11],[1,413216,871],[]],[114,0,0,[8,9,108,11],[1,414087,855],[]],[115,0,0,[8,9,108,11],[1,414941,844],[]],[116,0,0,[8,9,108,11],[1,415785,859],[]],[117,0,0,[8,9,108,11],[1,416644,855],[]],[118,0,0,[8,9,108,11],[1,417500,836],[]],[119,0,0,[8,9,108,11],[1,418336,829],[]],[120,0,0,[8,9,108,11],[1,419165,856],[]],[121,0,0,[8,9,108,11],[1,420021,833],[]],[122,0,0,[8,9,108,11],[1,420855,846],[]],[123,0,0,[8,9,108,11],[1,421701,839],[]],[124,0,0,[8,9,108,11],[1,422541,831],[]],[125,0,0,[8,9,108,11],[1,423372,851],[]],[126,0,0,[8,9,108,11],[1,424223,854],[]],[127,0,0,[8,9,108,11],[1,425077,841],[]],[128,0,0,[8,9,108,11],[1,425917,832],[]],[129,0,0,[8,9,108,11],[1,426749,828],[]]],[],[19,19,0,0]],[130,131,132,0,[],[1,427578,3979],[],[[133,0,0,[8,9,134,11],[1,427580,3977],[]]],[],[1,1,0,0]],[135,136,137,0,[],[1,431558,47425],[],[[138,0,0,[8,9,81,11],[1,431559,19995],[]],[139,0,0,[8,9,81,11],[1,451554,27428],[]]],[],[2,2,0,0]],[81,140,141,0,[],[1,478983,339284],[],[[142,0,0,[8,9,81,11],[1,478984,3010],[]],[143,0,0,[8,9,81,11],[1,481995,45048],[]],[144,0,0,[8,9,81,11],[1,527043,60560],[]],[145,0,0,[8,9,81,11],[1,587603,47913],[]],[146,0,0,[8,9,81,11],[1,635516,66385],[]],[147,0,0,[8,9,81,11],[1,701900,45414],[]],[148,0,0,[8,9,81,11],[1,747314,53762],[]],[149,0,0,[8,9,81,11],[1,801076,17191],[]]],[],[8,8,0,0]],[134,150,151,0,[],[1,818268,99373],[],[[7,0,0,[8,9,134,11],[1,818269,1262],[]],[152,0,0,[8,9,134,11],[1,819531,1709],[]],[12,0,0,[8,9,134,11],[1,821240,1310],[]],[13,0,0,[8,9,134,11],[1,822551,1601],[]],[14,0,0,[8,9,134,11],[1,824153,1571],[]],[15,0,0,[8,9,134,11],[1,825724,9947],[]],[16,0,0,[8,9,134,11],[1,835671,1277],[]],[153,0,0,[8,9,134,11],[1,836948,1278],[]],[17,0,0,[8,9,134,11],[1,838226,1327],[]],[154,0,0,[8,9,134,11],[1,839553,1306],[]],[18,0,0,[8,9,134,11],[1,840859,1436],[]],[155,0,0,[8,9,134,11],[1,842295,1449],[]],[19,0,0,[8,9,134,11],[1,843744,2560],[]],[20,0,0,[8,9,134,11],[1,846304,6455],[]],[156,0,0,[8,9,134,11],[1,852760,7381],[]],[21,0,0,[8,9,134,11],[1,860141,13341],[]],[157,0,0,[8,9,134,11],[1,873482,17208],[]],[22,0,0,[8,9,134,11],[1,890690,1428],[]],[158,0,0,[8,9,134,11],[1,892119,2067],[]],[23,0,0,[8,9,134,11],[1,894186,6523],[]],[24,0,0,[8,9,134,11],[1,900709,4959],[]],[25,0,0,[8,9,134,11],[1,905669,1581],[]],[26,0,0,[8,9,134,11],[1,907250,7500],[]],[27,0,0,[8,9,134,11],[1,914750,758],[]],[159,0,0,[8,9,134,11],[1,915508,2132],[]]],[],[25,25,0,0]],[160,161,162,0,[],[1,917641,40063],[],[[143,0,0,[8,9,163,11],[1,917642,4975],[]],[89,0,0,[8,9,163,11],[1,922617,8972],[]],[146,0,0,[8,9,163,11],[1,931590,26114],[]]],[],[3,3,0,0]]],[],[],[160,160,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
@@ -1638,13 +1906,13 @@ window.output["strings"] = [];
 window.output["strings"] = window.output["strings"].concat(["*","*Tests","*/home/runner/work/geogram/geogram/tests","*tests","*BNN Search","*/home/runner/work/geogram/geogram/tests/BNN_Search.robot","*tests/BNN_Search.robot","*center_square.obj","*daily","*daily_valgrind","*NNSearch","*smoke","*cyl.meshb","*disk1.obj","*disk2.obj","*fandisk.obj","*grid1.obj","*grid2.obj","*grid3.obj","*grid4.obj","*grid5.obj","*grid6.obj","*grid.obj","*SaraPezzini.obj","*tordu.meshb","*two_grids.obj","*Zylkopf.meshb","*xfail_missing_input_file","*xfail_two_input_files","*CDT 2d","*/home/runner/work/geogram/geogram/tests/CDT_2d.robot","*tests/CDT_2d.robot","*constraints_100_1.obj","*constraints_100_2.obj","*constraints_100_3.obj","*constraints_100_4.obj","*constraints_100_5.obj","*constraints_100_6.obj","*constraints_100_7.obj","*constraints_100_8.obj","*constraints_100_9.obj","*constraints_100_10.obj","*constraints_100_11.obj","*constraints_100K.obj","*triangle_no_duplicated_constraints.obj","*triangle_duplicated_constraints.obj","*constraints_finally_2.obj","*constraints_finally_3.obj","*CDT no Delaunay 2d","*/home/runner/work/geogram/geogram/tests/CDT_no_Delaunay_2d.robot","*tests/CDT_no_Delaunay_2d.robot","*CmdLine","*/home/runner/work/geogram/geogram/tests/CmdLine.robot","*tests/CmdLine.robot","*xfail invalid parameter","*10 seconds","*Small","*xfail bad boolean parameter","*xfail bad integer parameter","*xfail bad double parameter","*xfail bad profile","*xfail missing file arguments","*xfail too many file arguments","*CNN Search","*/home/runner/work/geogram/geogram/tests/CNN_Search.robot","*tests/CNN_Search.robot","*ConvexCell","*/home/runner/work/geogram/geogram/tests/ConvexCell.robot","*tests/ConvexCell.robot","*sphere_10.xyz","*15 minutes","*sphere_100.xyz","*sphere_1000.xyz","*cone_10.xyz","*cone_100.xyz","*cone_1000.xyz","*xfail missing input file","*CVT","*/home/runner/work/geogram/geogram/tests/CVT.robot","*tests/CVT.robot","*small_cube.tet8 (dim8)","*Remesh","*small_cube.tet8 (dim6)","*small_cube.tet8 (dim4)","*small_cube.tet8 (dim3)","*Delaunay","*/home/runner/work/geogram/geogram/tests/Delaunay.robot","*tests/Delaunay.robot","*cube.obj","*joint.off","*cube.obj (hull)","*joint.off (hull)","*cube.obj (2d)","*joint.off (2d)","*joint.off (2d triangle)","*DelaunaySequential","*/home/runner/work/geogram/geogram/tests/DelaunaySequential.robot","*tests/DelaunaySequential.robot","*FileConvert","*/home/runner/work/geogram/geogram/tests/FileConvert.robot","*tests/FileConvert.robot","*icosa.obj.mesh","*icosa.obj.meshb","*icosa.obj.eobj","*icosa.obj.ply","*icosa.obj.off","*icosa.obj.geogram","*icosa.obj.geogram_ascii","*FileInput","*/home/runner/work/geogram/geogram/tests/FileInput.robot","*tests/FileInput.robot","*xfail unknown file extension","*xfail file not found","*xfail corrupted.obj invalid integer value","*xfail corrupted.obj invalid floating point value","*xfail corrupted.obj invalid facet vertex index","*xfail corrupted.off invalid integer value","*xfail corrupted.off invalid floating point value","*xfail corrupted.off invalid facet vertex count","*xfail corrupted.off invalid facet vertex","*xfail corrupted.off invalid vertex count","*xfail truncated.off","*xfail corrupted invalid face count.meshb","*xfail corrupted invalid facet vertex.meshb","*xfail truncated.meshb","*xfail corrupted invalid face count.ply","*xfail corrupted invalid vertex count.ply","*xfail truncated.ply","*xfail corrupted invalid triangle count.stl","*xfail truncated.stl","*NL","*/home/runner/work/geogram/geogram/tests/NL.robot","*tests/NL.robot","*OpenNL test","*RVD","*Reconstruct","*/home/runner/work/geogram/geogram/tests/Reconstruct.robot","*tests/Reconstruct.robot","*mask.off (profile=reconstruct)","*mask.off (profile=reconstruct, Psmooth=3)","*/home/runner/work/geogram/geogram/tests/Remesh.robot","*tests/Remesh.robot","*icosa.obj no remesh","*icosa.obj","*mask3kf.obj","*S2.obj","*three_holes.obj","*cube.obj (profile=cad)","*joint.off (profile=cad)","*test_isect.obj (profile=convert, isect=true)","*/home/runner/work/geogram/geogram/tests/RVD.robot","*tests/RVD.robot","*center_square.obj with two_grids.obj","*grid1_dual.obj","*grid2_dual.obj","*grid3_dual.obj","*grid5_dual.obj","*grid6_dual.obj","*grid_dual.obj","*xfail_bad_results","*RVD cells","*/home/runner/work/geogram/geogram/tests/RVD_cells.robot","*tests/RVD_cells.robot","*RVD_cells"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:15:59","fail":0,"label":"All Tests","pass":160,"skip":0}],[{"elapsed":"00:01:47","fail":0,"label":"ConvexCell","pass":7,"skip":0},{"elapsed":"00:15:59","fail":0,"label":"daily","pass":160,"skip":0},{"elapsed":"00:15:59","fail":0,"label":"daily_valgrind","pass":160,"skip":0},{"elapsed":"00:00:12","fail":0,"label":"Delaunay","pass":9,"skip":0},{"elapsed":"00:00:12","fail":0,"label":"FileConvert","pass":7,"skip":0},{"elapsed":"00:00:16","fail":0,"label":"FileInput","pass":19,"skip":0},{"elapsed":"00:00:36","fail":0,"label":"NNSearch","pass":36,"skip":0},{"elapsed":"00:09:41","fail":0,"label":"Remesh","pass":14,"skip":0},{"elapsed":"00:01:45","fail":0,"label":"RVD","pass":26,"skip":0},{"elapsed":"00:00:40","fail":0,"label":"RVD_cells","pass":3,"skip":0},{"elapsed":"00:00:05","fail":0,"label":"Small","pass":7,"skip":0},{"elapsed":"00:15:59","fail":0,"label":"smoke","pass":160,"skip":0}],[{"elapsed":"00:15:59","fail":0,"id":"s1","label":"Tests","name":"Tests","pass":160,"skip":0},{"elapsed":"00:00:20","fail":0,"id":"s1-s1","label":"Tests.BNN Search","name":"BNN Search","pass":18,"skip":0},{"elapsed":"00:00:23","fail":0,"id":"s1-s2","label":"Tests.CDT 2d","name":"CDT 2d","pass":16,"skip":0},{"elapsed":"00:00:21","fail":0,"id":"s1-s3","label":"Tests.CDT no Delaunay 2d","name":"CDT no Delaunay 2d","pass":16,"skip":0},{"elapsed":"00:00:05","fail":0,"id":"s1-s4","label":"Tests.CmdLine","name":"CmdLine","pass":7,"skip":0},{"elapsed":"00:00:16","fail":0,"id":"s1-s5","label":"Tests.CNN Search","name":"CNN Search","pass":18,"skip":0},{"elapsed":"00:01:47","fail":0,"id":"s1-s6","label":"Tests.ConvexCell","name":"ConvexCell","pass":7,"skip":0},{"elapsed":"00:03:15","fail":0,"id":"s1-s7","label":"Tests.CVT","name":"CVT","pass":4,"skip":0},{"elapsed":"00:00:10","fail":0,"id":"s1-s8","label":"Tests.Delaunay","name":"Delaunay","pass":7,"skip":0},{"elapsed":"00:00:02","fail":0,"id":"s1-s9","label":"Tests.DelaunaySequential","name":"DelaunaySequential","pass":2,"skip":0},{"elapsed":"00:00:12","fail":0,"id":"s1-s10","label":"Tests.FileConvert","name":"FileConvert","pass":7,"skip":0},{"elapsed":"00:00:16","fail":0,"id":"s1-s11","label":"Tests.FileInput","name":"FileInput","pass":19,"skip":0},{"elapsed":"00:00:05","fail":0,"id":"s1-s12","label":"Tests.NL","name":"NL","pass":1,"skip":0},{"elapsed":"00:00:47","fail":0,"id":"s1-s13","label":"Tests.Reconstruct","name":"Reconstruct","pass":2,"skip":0},{"elapsed":"00:05:39","fail":0,"id":"s1-s14","label":"Tests.Remesh","name":"Remesh","pass":8,"skip":0},{"elapsed":"00:01:40","fail":0,"id":"s1-s15","label":"Tests.RVD","name":"RVD","pass":25,"skip":0},{"elapsed":"00:00:40","fail":0,"id":"s1-s16","label":"Tests.RVD cells","name":"RVD cells","pass":3,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:15:58","fail":0,"label":"All Tests","pass":160,"skip":0}],[{"elapsed":"00:01:48","fail":0,"label":"ConvexCell","pass":7,"skip":0},{"elapsed":"00:15:58","fail":0,"label":"daily","pass":160,"skip":0},{"elapsed":"00:15:58","fail":0,"label":"daily_valgrind","pass":160,"skip":0},{"elapsed":"00:00:12","fail":0,"label":"Delaunay","pass":9,"skip":0},{"elapsed":"00:00:12","fail":0,"label":"FileConvert","pass":7,"skip":0},{"elapsed":"00:00:16","fail":0,"label":"FileInput","pass":19,"skip":0},{"elapsed":"00:00:36","fail":0,"label":"NNSearch","pass":36,"skip":0},{"elapsed":"00:09:41","fail":0,"label":"Remesh","pass":14,"skip":0},{"elapsed":"00:01:43","fail":0,"label":"RVD","pass":26,"skip":0},{"elapsed":"00:00:40","fail":0,"label":"RVD_cells","pass":3,"skip":0},{"elapsed":"00:00:05","fail":0,"label":"Small","pass":7,"skip":0},{"elapsed":"00:15:58","fail":0,"label":"smoke","pass":160,"skip":0}],[{"elapsed":"00:15:58","fail":0,"id":"s1","label":"Tests","name":"Tests","pass":160,"skip":0},{"elapsed":"00:00:20","fail":0,"id":"s1-s1","label":"Tests.BNN Search","name":"BNN Search","pass":18,"skip":0},{"elapsed":"00:00:23","fail":0,"id":"s1-s2","label":"Tests.CDT 2d","name":"CDT 2d","pass":16,"skip":0},{"elapsed":"00:00:21","fail":0,"id":"s1-s3","label":"Tests.CDT no Delaunay 2d","name":"CDT no Delaunay 2d","pass":16,"skip":0},{"elapsed":"00:00:05","fail":0,"id":"s1-s4","label":"Tests.CmdLine","name":"CmdLine","pass":7,"skip":0},{"elapsed":"00:00:16","fail":0,"id":"s1-s5","label":"Tests.CNN Search","name":"CNN Search","pass":18,"skip":0},{"elapsed":"00:01:48","fail":0,"id":"s1-s6","label":"Tests.ConvexCell","name":"ConvexCell","pass":7,"skip":0},{"elapsed":"00:03:15","fail":0,"id":"s1-s7","label":"Tests.CVT","name":"CVT","pass":4,"skip":0},{"elapsed":"00:00:10","fail":0,"id":"s1-s8","label":"Tests.Delaunay","name":"Delaunay","pass":7,"skip":0},{"elapsed":"00:00:02","fail":0,"id":"s1-s9","label":"Tests.DelaunaySequential","name":"DelaunaySequential","pass":2,"skip":0},{"elapsed":"00:00:12","fail":0,"id":"s1-s10","label":"Tests.FileConvert","name":"FileConvert","pass":7,"skip":0},{"elapsed":"00:00:16","fail":0,"id":"s1-s11","label":"Tests.FileInput","name":"FileInput","pass":19,"skip":0},{"elapsed":"00:00:04","fail":0,"id":"s1-s12","label":"Tests.NL","name":"NL","pass":1,"skip":0},{"elapsed":"00:00:47","fail":0,"id":"s1-s13","label":"Tests.Reconstruct","name":"Reconstruct","pass":2,"skip":0},{"elapsed":"00:05:39","fail":0,"id":"s1-s14","label":"Tests.Remesh","name":"Remesh","pass":8,"skip":0},{"elapsed":"00:01:39","fail":0,"id":"s1-s15","label":"Tests.RVD","name":"RVD","pass":25,"skip":0},{"elapsed":"00:00:40","fail":0,"id":"s1-s16","label":"Tests.RVD cells","name":"RVD cells","pass":3,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1704933051060;
+window.output["baseMillis"] = 1705019435606;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 959477;
+window.output["generated"] = 957852;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -1654,7 +1922,7 @@ window.settings = {"background":{"fail":"#f66","pass":"#9e9","skip":"#fed84f"},"
 </script>
 <title></title>
 </head>
-<body>
+<body data-theme="dark">
 <div id="javascript-disabled">
   <h1>Opening Robot Framework report failed</h1>
   <ul>
@@ -1664,13 +1932,15 @@ window.settings = {"background":{"fail":"#f66","pass":"#9e9","skip":"#fed84f"},"
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
-
+<div id="status-bar"></div>
 <div id="header"></div>
 <div id="statistics-container"></div>
 <div id="test-details-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function () {
+    storage.init();
+    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -1678,24 +1948,37 @@ $(document).ready(function () {
         return;
     }
     window.prevLocationHash = '';
-    setBackground(topsuite);
     initLayout(topsuite.name, 'Report');
-    storage.init('report');
+    setStatusColor(topsuite);
     addSummary(topsuite);
     addStatistics();
     addDetails();
     window.onhashchange = showDetailsByHash;
+    document.addEventListener("theme-change", () => {
+        setStatusColor(topsuite);
+    });
 });
 
-function setBackground(topsuite) {
+function setStatusColor(topsuite) {
     var color;
-    if (topsuite.fail)
+    let fail = Boolean(topsuite.fail);
+    let pass = Boolean(!topsuite.fail && topsuite.pass);
+    let skip = Boolean(!topsuite.fail && !topsuite.pass);
+    if (theme.getPreference() === 'dark') {
+        $('#status-bar').toggleClass("fail-bar", fail);
+        $('#status-bar').toggleClass("pass-bar", pass);
+        $('#status-bar').toggleClass("skip-bar", skip);
+        $('body').css('background-color', "#1c2227");
+        return;
+    }
+    if (fail)
         color = window.settings.background.fail;
-    else if (topsuite.pass)
+    else if (pass)
         color = window.settings.background.pass;
     else
         color = window.settings.background.skip;
     $('body').css('background-color', color);
+    $('#status-bar').toggleClass("fail-bar pass-bar skip-bar", false);
 }
 
 function addSummary(topsuite) {
