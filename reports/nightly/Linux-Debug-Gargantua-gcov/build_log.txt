@@ -38,8 +38,8 @@
 [ 19%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/logger.cpp.o
 [ 19%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/numeric.cpp.o
 [ 20%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/packed_arrays.cpp.o
-[ 21%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/process.cpp.o
 [ 21%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/process_unix.cpp.o
+[ 21%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/process.cpp.o
 [ 22%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/process_win.cpp.o
 [ 22%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/progress.cpp.o
 [ 23%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/basic/quaternion.cpp.o
@@ -156,9 +156,9 @@
 [ 78%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_pr_search.cpp.o
 [ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_search.cpp.o
 [ 79%] Linking CXX executable ../../../bin/test_convex_cell
+[ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
 [ 79%] Built target test_convex_cell
 [ 79%] Building CXX object src/tests/bench_load/CMakeFiles/bench_load.dir/main.cpp.o
-[ 79%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/bd_tree.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/brute.cpp.o
 [ 80%] Building CXX object src/tests/test_nn_search/CMakeFiles/test_nn_search.dir/third_party/ANN/kd_dump.cpp.o
 [ 81%] Linking CXX executable ../../../bin/bench_load
