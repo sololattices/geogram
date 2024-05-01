@@ -186,8 +186,8 @@
 [ 91%] Linking CXX executable ../../../bin/test_logger
 [ 91%] Linking CXX executable ../../../bin/test_RVC
 [ 91%] Built target test_logger
+[ 91%] Built target test_RVC
 [ 92%] Building CXX object src/tests/test_CDT_2d/CMakeFiles/test_CDT_2d.dir/main.cpp.o
-[ 92%] Built target test_RVC
 [ 92%] Building CXX object src/examples/geogram/compute_delaunay/CMakeFiles/compute_delaunay.dir/main.cpp.o
 [ 92%] Linking CXX executable ../../../bin/test_CDT_2d
 [ 92%] Built target test_CDT_2d
