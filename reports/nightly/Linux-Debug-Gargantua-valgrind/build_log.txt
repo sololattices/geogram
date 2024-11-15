@@ -90,7 +90,7 @@
 [ 46%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/periodic.cpp.o
 [ 46%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/delaunay/periodic_delaunay_3d.cpp.o
 [ 47%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/CVT.cpp.o
-[ 47%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD.cpp.o
+[ 48%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD.cpp.o
 [ 48%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD_callback.cpp.o
 [ 49%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/RVD_mesh_builder.cpp.o
 [ 49%] Building CXX object src/lib/geogram/CMakeFiles/geogram.dir/voronoi/convex_cell.cpp.o
@@ -210,7 +210,7 @@
 [ 99%] Linking CXX executable ../../../../bin/manifold_harmonics
 [ 99%] Built target manifold_harmonics
 [ 99%] Building CXX object src/examples/geogram/boolean_operations/CMakeFiles/boolean_op.dir/main.cpp.o
+[ 99%] Linking CXX executable ../../../../bin/simple_raytrace
 [100%] Linking CXX executable ../../../../bin/boolean_op
-[100%] Linking CXX executable ../../../../bin/simple_raytrace
-[100%] Built target boolean_op
 [100%] Built target simple_raytrace
+[100%] Built target boolean_op
