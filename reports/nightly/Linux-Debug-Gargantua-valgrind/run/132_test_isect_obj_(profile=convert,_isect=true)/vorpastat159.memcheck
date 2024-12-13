@@ -12,8 +12,8 @@
   <line>Command: /home/runner/work/geogram/geogram/build/Linux64-gcc-dynamic-Debug/bin/vorpastat /home/runner/work/geogram/geogram/tests/data/Small/test_isect.obj out.meshb</line>
 </preamble>
 
-<pid>17913</pid>
-<ppid>6546</ppid>
+<pid>18058</pid>
+<ppid>6692</ppid>
 <tool>memcheck</tool>
 
 <args>
@@ -42,7 +42,7 @@
 
 <status>
   <state>FINISHED</state>
-  <time>00:00:00:21.538 </time>
+  <time>00:00:00:21.503 </time>
 </status>
 
 <errorcounts>
